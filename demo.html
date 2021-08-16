@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <table id="content-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                    <td>1</td>
+                    <td>Pen</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Book</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shoe</td>
+                    <td>200</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="" onsubmit="addContent(event)" class="content-form">
+            <label class="label" for="id-number">ID</label
+            ><input type="number" name="id-number" id="id-number" />
+            <label class="label" for="item-name">Item Name</label
+            ><input type="text" name="item-name" id="item-name" />
+            <label class="label" for="item-price">Item Price</label
+            ><input type="number" name="item-price" id="item-price" />
+            <input type="submit" value="button" id="submit-btn" />
+        </form>
+        <script src="./script.js"></script>
+    </body>
+</html>
